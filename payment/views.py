@@ -211,7 +211,7 @@ def billing_info(request):
         } 
 
 
-        paypal_form = PayPalPaymentsForm(intitial = paypal_dict)
+        paypal_form = PayPalPaymentsForm(initial = paypal_dict)
 
 
         if request.user.is_authenticated:
