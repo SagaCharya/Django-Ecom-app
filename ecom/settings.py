@@ -11,6 +11,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 
+
+
+# password for db localhost
+DB_PASSWORD = os.environ.get('DB_PASSWORD')
+
+
+# PASSWord for db 
+# DB_PASSWORD = os.environ['DB_PASSWORD']
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -20,8 +31,8 @@ SECRET_KEY = 'django-insecure-gzu5j23)9t26#o88dsls0)8c9j86@!4-6qlu+yfy8_8jre7&r8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-ecom-app-production-f311.up.railway.app', 'https://django-ecom-app-production-f311.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://django-ecom-app-production-f311.up.railway.app']
+ALLOWED_HOSTS = ['django-ecom-app-production-f311.up.railway.app', 'https://django-ecom-app-production-f311.up.railway.app', 'localhost','e05c-103-104-28-148.ngrok-free.app']
+CSRF_TRUSTED_ORIGINS = ['https://django-ecom-app-production-f311.up.railway.app', 'https://e05c-103-104-28-148.ngrok-free.app']
 
 
 # Application definition
@@ -83,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway' ,
         'USER':'postgres' ,
-        'PASSWORD': os.environ['DB_PASSWORD'],
+        'PASSWORD': DB_PASSWORD,
         'HOST':'autorack.proxy.rlwy.net',
         'PORT': '26595', 
         
