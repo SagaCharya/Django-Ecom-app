@@ -78,6 +78,11 @@
                 <div class="card-header">
                   Billing Info 
                 </div>
+                
+                {{ paypal_form.render }}
+
+
+
                 <div class="card-body">
                     <form action="{% url "process_order" %}" method='post'>
                     
