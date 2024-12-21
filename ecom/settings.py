@@ -14,11 +14,11 @@ load_dotenv()
 
 
 # password for db localhost
-DB_PASSWORD = os.environ.get('DB_PASSWORD')
+# DB_PASSWORD = os.environ.get('DB_PASSWORD')
 
 
 # PASSWord for db 
-# DB_PASSWORD = os.environ['DB_PASSWORD']
+DB_PASSWORD = os.environ['DB_PASSWORD']
 
 
 
